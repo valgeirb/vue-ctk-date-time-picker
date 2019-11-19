@@ -2,9 +2,10 @@
 
 # VueCtkDateTimePicker
 
+Forked to fix these bugs:
+* https://github.com/chronotruck/vue-ctk-date-time-picker/issues/243
+* https://github.com/chronotruck/vue-ctk-date-time-picker/pull/244
 > A vue component for select dates (range mode available) & time
-
-[![Build Status](https://circleci.com/gh/chronotruck/vue-ctk-date-time-picker/tree/master.svg?style=shield)](https://circleci.com/gh/chronotruck/vue-ctk-date-time-picker/tree/master)
 
 This documentation is for v2.\*. Find v1 documentation [here](./assets/doc-v1.md)
 

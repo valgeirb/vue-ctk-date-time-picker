@@ -1,6 +1,6 @@
 {
-  "name": "vue-ctk-date-time-picker",
-  "version": "2.4.0",
+  "name": "@valgeirb/vue-ctk-date-time-picker",
+  "version": "2.4.1",
   "description": "A vue component for select date & time (by Chronotruck)",
   "author": "Louis Mazel <loic.mazuel@chronotruck.com>",
   "scripts": {
@@ -58,7 +58,7 @@
     "not ie <= 8"
   ],
   "bugs": {
-    "url": "https://github.com/chronotruck/vue-ctk-date-time-picker/issues"
+    "url": "https://github.com/valgeirb/vue-ctk-date-time-picker/issues"
   },
   "engines": {
     "node": ">= 6.0.0",
@@ -69,7 +69,7 @@
     "dist/",
     "nuxt/"
   ],
-  "homepage": "https://github.com/chronotruck/vue-ctk-date-time-picker/releases",
+  "homepage": "https://github.com/valgeirb/vue-ctk-date-time-picker/releases",
   "keywords": [
     "vue",
     "javascript",
@@ -80,7 +80,6 @@
     "range",
     "picker",
     "ctk",
-    "chronotruck",
     "datepicker",
     "timepicker"
   ],
@@ -88,7 +87,7 @@
   "main": "dist/vue-ctk-date-time-picker.common.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chronotruck/vue-ctk-date-time-picker.git"
+    "url": "git+https://github.com/valgeirb/vue-ctk-date-time-picker.git"
   },
   "types": "dist/index.d.ts"
 }
