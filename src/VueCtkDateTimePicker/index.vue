@@ -175,7 +175,7 @@
           }
           const newValue = this.range ? this.getRangeDateToSend(value) : this.getDateTimeToSend(value)
           this.$emit('input', newValue)
-          this.trySettingValueToCustomElem();
+          this.trySettingValueToCustomElem()
         }
       },
       formatOutput () {
@@ -241,7 +241,7 @@
       }
     },
     methods: {
-      trySettingValueToCustomElem() {
+      trySettingValueToCustomElem () {
         if (this.hasCustomElem && !this.noValueToCustomElem) {
           this.$nextTick(() => {
             this.setValueToCustomElem()
