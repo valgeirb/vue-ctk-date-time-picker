@@ -9,7 +9,7 @@
     "build": "npm run build:lib && npm run build:docs && npm run delete:reports",
     "test": "vue-cli-service test:unit /test/specs",
     "lint": "vue-cli-service lint",
-    "prepublish": "npm i && npm run lint && npm run test:unit && npm run build",
+    "prepublishOnly": "npm i && npm run lint && npm run test:unit && npm run build",
     "build:docs": "vue-cli-service build --dest docs --mode production",
     "build:lib": "vue-cli-service build --target lib --name vue-ctk-date-time-picker ./src/VueCtkDateTimePicker/index.vue",
     "lint:fix": "eslint --ext .js,.vue src",
