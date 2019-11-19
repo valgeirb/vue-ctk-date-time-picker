@@ -175,11 +175,7 @@
           }
           const newValue = this.range ? this.getRangeDateToSend(value) : this.getDateTimeToSend(value)
           this.$emit('input', newValue)
-          if (this.hasCustomElem && !this.noValueToCustomElem) {
-            this.$nextTick(() => {
-              this.setValueToCustomElem()
-            })
-          }
+          this.trySettingValueToCustomElem();
         }
       },
       formatOutput () {
@@ -216,6 +212,12 @@
       },
       locale (value) {
         updateMomentLocale(value, this.firstDayOfWeek)
+      },
+      label () {
+        this.trySettingValueToCustomElem()
+      },
+      dateFormatted () {
+        this.trySettingValueToCustomElem()
       }
     },
     mounted () {
@@ -239,6 +241,13 @@
       }
     },
     methods: {
+      trySettingValueToCustomElem() {
+        if (this.hasCustomElem && !this.noValueToCustomElem) {
+          this.$nextTick(() => {
+            this.setValueToCustomElem()
+          })
+        }
+      },
       setValueToCustomElem () {
         /**
          * TODO: Find a way (perhaps), to bind default attrs to custom element.
